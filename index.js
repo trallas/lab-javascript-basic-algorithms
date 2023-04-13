@@ -1,28 +1,42 @@
-// Iteration 1: Names and Input
-/*
+/* We use ${} to concatenate variables*/
+var hacker ="Yabel";
+var hacker1 = "The driver's name is";
+console.log(`${hacker1}`, `${hacker}`);
+var hacker3 = "The navigator's name is";
+var hacker4 = "Tonitheboss";
+console.log(`${hacker3}`, `${hacker4}`);
 
- 1.1 Create a variable `hacker1` with the driver's name. <br>
-  1.2 Print `"The driver's name is XXXX"`.<br>
-  1.3 Create a variable `hacker2` with the navigator's name.<br>
-  1.4 Print `"The navigator's name is YYYY"`.*/
-
-let hacker1 ="XavierTrallero"
-console.log("The driver's name is "hacker1");
-let hacker2="Yabel";
-console.log("The navigator's name is",+ "hacker2");
-
-
-
+//Depending on which name is longer, print:
 // Iteration 2: Conditionals
 
-/*
-- The driver has the longest name, it has XX characters. or
-- It seems that the navigator has the longest name, it has XX characters. or
-- Wow, you both have equally long names, XX characters!.
-*/
+console.log(`${hacker} ${hacker.length}`);
+console.log(`${hacker4} ${hacker4.length}`);
+
+const hackerlength= 5;
+const hacker4length=11;
+
+if (hackerlength >=11) {
+  console.log("The driver has the longest name, it has 5 characters");
+}
+else
+  console.log("It seems that the navigator (Tonitheboss) has the longest name, it has 11 characters");
 
 // Iteration 3: Loops
 
+var hacker ="Yabel";
+var hacker4 = "Tonitheboss";
+var result = hacker.toUpperCase().split("").join(" ");
+console.log(result);
+var result = hacker4.toUpperCase().split("").join(" ");
+console.log(result);
+
+let string = "Tonitheboss"
+string = [...string].reverse().join("");
+
+console.log(string);
+
+if (hacker.length<hacker4.length)
+console.log(`The driver's name goes first`);
 /*
 .1 Print the characters of the driver's name, separated by space, and in capital letters, i.e., "J O H N".
 
@@ -34,3 +48,4 @@ The driver's name goes first.
 Yo, the navigator goes first, definitely.
 What?! You both have the same name?
 */
+ 
